@@ -11,3 +11,8 @@ Dalam satu kali eksekusi, program publisher mengirimkan 5 data ke message broker
 program, what does it mean?
 
 URL `"amqp://guest:guest@localhost:5672"` yang sama antara program publisher dan subscriber menunjukkan bahwa keduanya terhubung ke server RabbitMQ yang sama. Ini memungkinkan komunikasi antara kedua program, dimana publisher mengirim pesan ke RabbitMQ dan subscriber menerima pesan tersebut dari server yang sama. Kesamaan URL ini menjamin bahwa pesan yang dikirim oleh publisher akan diterima oleh subscriber yang terhubung ke message broker yang sama.
+
+> On your publisher Readme.md, edit it, and put your screen of your running RabbitMQ.
+
+![Running RabbitMQ](./assets/rabbitmq.png)
+
