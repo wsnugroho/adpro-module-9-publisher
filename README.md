@@ -25,3 +25,9 @@ Readme.md, put some sentences describing what was happening.
 
 Pada gambar di atas, terlihat bahwa konsol publisher (bagian bawah) menunjukkan eksekusi program publisher yang berhasil dijalankan untuk mengirimkan pesan ke RabbitMQ. Sementara itu, konsol subscriber (bagian atas) menunjukkan 5 pesan `UserCreatedEventMessage` yang berhasil diterima dari RabbitMQ, dengan user_id "1" hingga "5" dan user_name mengikuti format "2306275084-{nama}" (dari "2306275084-Amir" hingga "2306275084-Emir"). Ini membuktikan komunikasi antara publisher dan subscriber berjalan dengan baik melalui message broker RabbitMQ.
 
+> Edit your publisher readme.md again, capture your browser, and explain how the spike got to do
+with running the publisher. Put it on readme.md.
+
+![RabbitMQ Spike](./assets/rabbitmq-spike.png)
+
+Pada gambar di atas, terlihat dua puncak (spike) pada grafik "Message rates" di dashboard RabbitMQ. Spike berwarna ungu ini mengindikasikan aktivitas pengiriman pesan dari program publisher ke RabbitMQ. Spike terjadi ketika program publisher dijalankan dan mengirimkan 5 pesan ke queue RabbitMQ (Saya menjalankan program publisher sebanyak 2 kali). Grafik ini membuktikan bahwa message broker berhasil menerima dan memproses pesan-pesan yang dikirim oleh publisher, yang kemudian dapat diakses oleh subscriber.
