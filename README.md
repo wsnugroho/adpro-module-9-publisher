@@ -16,3 +16,12 @@ URL `"amqp://guest:guest@localhost:5672"` yang sama antara program publisher dan
 
 ![Running RabbitMQ](./assets/rabbitmq.png)
 
+> Try to capture your screen showing publisher and subscriber consoles, put it on your publisher repository
+Readme.md, put some sentences describing what was happening.
+
+![Publisher and Subscriber Consoles](./assets/console-pubsub.png)
+
+# Ringkasan Komunikasi Publisher dan Subscriber
+
+Pada gambar di atas, terlihat bahwa konsol publisher (bagian bawah) menunjukkan eksekusi program publisher yang berhasil dijalankan untuk mengirimkan pesan ke RabbitMQ. Sementara itu, konsol subscriber (bagian atas) menunjukkan 5 pesan `UserCreatedEventMessage` yang berhasil diterima dari RabbitMQ, dengan user_id "1" hingga "5" dan user_name mengikuti format "2306275084-{nama}" (dari "2306275084-Amir" hingga "2306275084-Emir"). Ini membuktikan komunikasi antara publisher dan subscriber berjalan dengan baik melalui message broker RabbitMQ.
+
