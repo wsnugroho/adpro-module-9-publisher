@@ -1,6 +1,6 @@
-# Module 10 - Software Architecture
+# Module 9 - Software Architecture
 
-## Refleksi 10 - Publisher
+## Refleksi 9 - Publisher
 
 > How many data your publlsher program will send to the message broker in one
 run?
